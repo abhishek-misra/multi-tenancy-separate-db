@@ -1,9 +1,8 @@
 ﻿using MultiTenant.Core.Documents.Dto;
 
-namespace MultiTenant.Core.Documents.Services
+namespace MultiTenant.Core.Documents.Services;
+
+public interface IDocumentsService
 {
-    public interface IDocumentsService
-    {
-        Task<DocumentsDisplayModel> GetById(Guid  id);
-    }
+    Task<DocumentsDisplayModel> GetById(Guid  id);
 }
